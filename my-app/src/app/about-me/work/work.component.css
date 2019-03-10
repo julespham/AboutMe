@@ -1,0 +1,11 @@
+.work {
+  top: 20%;
+  left: 10%;
+  /* bottom: 50%; */
+  position: fixed;
+  border: white;
+  background: white;
+  width: 250px;
+  z-index: 3;
+}
+
