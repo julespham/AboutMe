@@ -8,19 +8,39 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 })
 export class AboutMeComponent implements OnInit {
   topics = [
-    {type: 'About'},
-    {type: 'Work'},
-    {type: 'Projects'}
+    {type: 'face'},
+    {type: 'work'},
+    {type: 'computer'}
   ];
   type: string;
-
+  selectedUrl = [];
   constructor() { }
 
   ngOnInit() {
+    this.type = 'default';
+    this.getTime();
   }
   toggle(type: string) {
-    console.log('type' + type);
     this.type = type;
-    console.log(this.type);
+  }
+  getTime() {
+    let day = new Date();
+    let hours = day.getHours();
+    console.log('day ' +  day.getHours());
+    // if (0 > hours > 9 ) {
+    //
+    // }
+  }
+  selectedURL(type) {
+    switch (type) {
+      case 'face':
+        return '../../assets/images/404.jpg';
+      case 'work':
+        return '../../assets/images/lazygirl.jpg';
+      case 'computer':
+        return '../../assets/images/404.jpg';
+      case 'default':
+        return '../../assets/images/camping.jpg';
+    }
   }
 }

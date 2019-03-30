@@ -1,14 +1,13 @@
 
-<button mat-fab class="aboutme" (click)="toggle('default')"></button>
-<div class="navigationbuttons">
-  <button mat-fab
-    (click)=toggle(topic.type)
-    *ngFor="let topic of topics">
-    {{topic.type}}
-   </button>
-</div>
+<button mat-fab class="aboutme"
+        (click)="toggle('default')"
+        [ngStyle]="{'background-image':'url(' + selectedURL(type) + ')'}"></button>
 
-<app-home *ngIf="type=='About'"></app-home>
-<app-work *ngIf="type == 'Work'"></app-work>
-<app-projects *ngIf="type === 'Projects'"></app-projects>
+<i class="material-icons" (click)=toggle(topic.type)
+       *ngFor="let topic of topics">{{topic.type}}</i>
+
+<app-home *ngIf="type=='face'"></app-home>
+<app-work *ngIf="type == 'work'"></app-work>
+<app-projects *ngIf="type === 'computer'"></app-projects>
+
 
