@@ -1,0 +1,9 @@
+.blog {
+  top: 37%;
+  position: absolute;
+  border: white;
+  background: white;
+  z-index: 3;
+  width: 50%;
+  right: 39%;
+}

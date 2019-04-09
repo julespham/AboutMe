@@ -10,7 +10,8 @@ export class AboutMeComponent implements OnInit {
   topics = [
     {type: 'face'},
     {type: 'work'},
-    {type: 'computer'}
+    {type: 'computer'},
+    {type: 'create'}
   ];
   type: string;
   selectedUrl = [];
@@ -41,6 +42,8 @@ export class AboutMeComponent implements OnInit {
         return '../../assets/images/404.jpg';
       case 'default':
         return '../../assets/images/camping.jpg';
+      case 'create':
+          return '../../assets/images/404.jpg'
     }
   }
 }

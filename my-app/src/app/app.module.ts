@@ -8,7 +8,7 @@ import {FormsModule} from '@angular/forms';
 import { HomeComponent } from './about-me/home/home.component';
 import { WorkComponent } from './about-me/work/work.component';
 import { ProjectsComponent } from './about-me/projects/projects.component';
-
+import { BlogComponent } from './about-me/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +16,8 @@ import { ProjectsComponent } from './about-me/projects/projects.component';
     AboutMeComponent,
     HomeComponent,
     WorkComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,

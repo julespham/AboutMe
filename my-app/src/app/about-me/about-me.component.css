@@ -84,15 +84,27 @@ i.material-icons:nth-of-type(2):after {
 }
 
 i.material-icons:nth-of-type(3) {
-  background-color: #cdb274;
+  background-color: #FEF75E;
 }
 
 i.material-icons:nth-of-type(3):hover {
-  color: #cdb274;
+  color: #FEF75E;
 }
 
 i.material-icons:nth-of-type(3):after {
-  border-color: #cdb274;
+  border-color: #FEF75E;
+}
+
+i.material-icons:nth-of-type(4) {
+  background-color: #B5E7D6;
+}
+
+i.material-icons:nth-of-type(4):hover {
+  color: #B5E7D6;
+}
+
+i.material-icons:nth-of-type(4):after {
+  border-color: #B5E7D6;
 }
 
 i.material-icons:hover {
