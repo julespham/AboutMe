@@ -1,9 +1,10 @@
 .projects {
-  top: 20%;
-  left: 33%;
+  top: 37%;
   position: absolute;
   border: white;
   background: white;
   width: 250px;
   z-index: 3;
+  width: 50%;
+  right: 39%;
 }
