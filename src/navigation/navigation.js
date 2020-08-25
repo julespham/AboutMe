@@ -1,11 +1,12 @@
 import React from 'react';
+import './navigation.css';
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Link
   } from "react-router-dom";
-  
+
 
 function TitleLists(props) {
     const titles = props.titles;
@@ -20,7 +21,7 @@ function TitleLists(props) {
 }
 
 class Navigation extends React.Component {
-    titles = ["Projects", "blog"];
+    titles = ["Home","Projects", "Blog"];
  
     render() {
       return (
