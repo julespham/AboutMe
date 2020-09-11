@@ -1,8 +1,19 @@
+
+
 .welcome-message {
     animation: pulse 5s infinite;
 }
 
-content {
-    background-color: white;
-    opacity: 40%;
+
+.contents {
+    display: flex;
+    align-items: center;
+    height: 57%;
+    margin-top: 23%;
+}
+
+#girl {
+    position: absolute;
+    right: 40px;
+    z-index: -1;
 }

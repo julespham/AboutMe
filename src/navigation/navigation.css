@@ -1,5 +1,8 @@
 ul {
     list-style-type: none;
-    flex-direction: row-reverse;
     display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: end;
+    margin-right: 40px;
 }
